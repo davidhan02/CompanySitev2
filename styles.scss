@@ -48,11 +48,12 @@ body {
     border-top: 0px;
     border-radius: 0px 0px 5px 5px;
 
-    // Nav elements
+    // NAV ELEMS
     .navbar-brand {
       img {
         height: 65px;
         width: auto;
+        opacity: 0.8;
       }
     }
     .navbar-toggler {
@@ -62,7 +63,7 @@ body {
     .navbar-nav {
       background: #fff;
 
-      // Nav items and links
+      // NAV LINKS
       .nav-item {
         margin: 1px;
       }
@@ -82,7 +83,7 @@ body {
     }
   }
 
-  // Carousel caption
+  // CAROUSEL CAPTION
   .carousel-caption {
     color: #000;
     min-width: 450px;
@@ -90,7 +91,8 @@ body {
     left: 50%;
     top: 60%;
     transform: translate(-50%, -60%);
-    // Carousel caption items
+
+    // CAPTION ITEMS
     button {
       padding: 20px 30px;
       border-radius: 0;
@@ -104,9 +106,10 @@ body {
     }
   }
 
-  // Section Title
+  // SECTION TITLE
   .section-title {
     padding: 10px 0 30px;
+    // TEXT
     h3 {
       font-weight: 800;
       font-size: 3rem;
@@ -117,12 +120,12 @@ body {
     }
   }
 
-  // Containers
+  // CONTAINERS
   .container-fluid {
     max-width: 1250px;
     padding: 90px 20px;
 
-    // Info columns
+    // INFO COLUMNS
     .info-1 {
       text-align: right;
       padding: 40px 40px 40px 0px;
@@ -140,11 +143,10 @@ body {
     }
     .info-3 {
       padding: 30px 40px;
-
-      // Intro icons and text
+      // ICONS / TEXT
       li {
         padding: 10px 0;
-        min-width: 260px;
+        min-width: 270px;
       }
       .intro-icon {
         float: left;
@@ -157,7 +159,7 @@ body {
         line-height: -5px;
       }
     }
-    // Promise Section
+    // PROMISE
     .promise {
       padding: 0 5%;
       text-align: justify;
@@ -167,7 +169,7 @@ body {
         width: auto;
       }
     }
-    // Card buttons
+    // BUTTONS
     .btn {
       padding: 10px 20px;
       background-color: #555;
@@ -181,21 +183,21 @@ body {
       background-color: #fff;
       color: #000;
     }
-
-    // Team Card
+    // TEAM
     .team-card {
       max-width: 15rem;
       margin: 40px auto;
       background: #ddd;
       color: #000;
     }
-    // Service Card
+    // SERVICE
     .service-card {
       max-width: 16rem;
       margin: 0px auto 50px;
       border: 0px;
       background: none;
 
+      // CIRCLE
       .circle-container {
         border: 10px solid #555;
         border-radius: 50%;
@@ -211,7 +213,7 @@ body {
     }
   }
 
-  // Testimonals Section
+  // TESTIMONIALS
   #testimonials {
     padding: 80px 0px;
   }
@@ -227,7 +229,7 @@ body {
     margin: 20px;
   }
 
-  // Press
+  // PRESS
   #press {
     padding-bottom: 10px;
     max-width: 1250px;
@@ -242,7 +244,7 @@ body {
     margin: 20px 20px 50px;
   }
 
-  // Modal
+  // MODAL
   .modal-content {
     border-radius: 0;
   }
@@ -265,11 +267,29 @@ body {
   }
 }
 
-// Shift to md bootstrap
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#footer {
+  .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0 30px;
+  }
+}
+
+// SHIFT TO MD VIEWPORT
 @media (max-width: 991px) {
 
   body {
-
+    // NAVBAR
     .navbar-nav {
       border: 1px solid #ddd;
       border-top: 1px solid #fff;
@@ -282,18 +302,20 @@ body {
     .nav-item:nth-last-child(1) {
       margin: 7px !important;
     }
+    // TITLE
+    .section-title {
+      h3 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    // CONTAINER
     .container-fluid {
       padding: 90px 9%;
 
-      .section-title {
-        h3 {
-          font-size: 2rem;
-        }
-        p {
-          font-size: 1rem;
-        }
-      }
-
+      // INFO SECTIONS
       .info-1 {
         padding: 0;
         margin: 20px auto 50px;
@@ -314,9 +336,11 @@ body {
       }
     }
   }
+  // PROMISE
   .promise {
     padding: 0 !important;
   }
+  // TESTIMONIAL
   .testimonial-text {
     padding: 0 5% 0 !important;
   }

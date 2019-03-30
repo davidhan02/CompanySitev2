@@ -52,6 +52,7 @@ body .navbar-light {
 body .navbar-light .navbar-brand img {
   height: 65px;
   width: auto;
+  opacity: 0.8;
 }
 body .navbar-light .navbar-toggler {
   padding: 15px;
@@ -130,7 +131,7 @@ body .container-fluid .info-3 {
 }
 body .container-fluid .info-3 li {
   padding: 10px 0;
-  min-width: 260px;
+  min-width: 270px;
 }
 body .container-fluid .info-3 .intro-icon {
   float: left;
@@ -236,6 +237,22 @@ body .modal-header .modal-title {
   margin: 0 auto;
 }
 
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#footer .footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 50px 0 30px;
+}
+
 @media (max-width: 991px) {
   body .navbar-nav {
     border: 1px solid #ddd;
@@ -249,14 +266,14 @@ body .modal-header .modal-title {
   body .nav-item:nth-last-child(1) {
     margin: 7px !important;
   }
+  body .section-title h3 {
+    font-size: 2.5rem;
+  }
+  body .section-title p {
+    font-size: 1.4rem;
+  }
   body .container-fluid {
     padding: 90px 9%;
-  }
-  body .container-fluid .section-title h3 {
-    font-size: 2rem;
-  }
-  body .container-fluid .section-title p {
-    font-size: 1rem;
   }
   body .container-fluid .info-1 {
     padding: 0;
